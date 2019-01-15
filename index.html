@@ -1,15 +1,33 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- incluindo os componentes -->
+    <script type="module" src="p-irado.js"></script>
+    <script type="module" src="w-menu.js"></script>
+    <script type="module" src="w-foot.js"></script>
   </head>
   <body>
-    <h1>
-      customElemtns
-    </h1>
-    <script type="module" src="p-irado.js"></script>
-    <p-irado data-text="P com grandes Atributos">
-       <span slot="slot-text">Meu paragrafo do slospan>
-    </p-irado>
+    <w-menu></w-menu>
 
-    <p>p careta</p>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Hello World
+        </h1>
+        <p class="subtitle">
+          My first website with <strong>Bulma</strong>!
+        </p>
+        <p-irado data-text="P com grandes Atributos">
+          <span slot="slot-text">Meu paragrafo do slot</span>
+        </p-irado>
+      </div>
+    </section>
+    <w-foot></w-foot>
   </body>
 </html>
